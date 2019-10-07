@@ -9,21 +9,6 @@
 
 
 
-    <!--<Grid>
-
-        <Grid.RowDefinitions>
-            <RowDefinition Height="180*"></RowDefinition>
-            <RowDefinition Height="65*"></RowDefinition>
-            <RowDefinition Height="65*"></RowDefinition>
-            <RowDefinition Height="65*"></RowDefinition>
-            <RowDefinition Height="65*"></RowDefinition>
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-        </Grid.ColumnDefinitions>-->
-
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="140*"></RowDefinition>
@@ -41,8 +26,8 @@
             <Border Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" DockPanel.Dock="Top" Margin="10,10,10,10" BorderBrush="Black" BorderThickness="1">
 
                 <Viewbox>
-                    <TextBlock TextAlignment="Right" x:Name="Texto"></TextBlock>
-                </Viewbox>
+                    <TextBlock x:Name="Texto" TextAlignment="Right"/>
+            </Viewbox>
             
             </Border>
 
