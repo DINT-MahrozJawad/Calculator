@@ -7,8 +7,6 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="472.811" Width="333.41 " Icon="Calculadora.png">
 
-
-
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="140*"></RowDefinition>
@@ -25,62 +23,59 @@
 
             <Border Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" DockPanel.Dock="Top" Margin="10,10,10,10" BorderBrush="Black" BorderThickness="1">
 
-                <Viewbox>
-                    <TextBlock x:Name="Texto" TextAlignment="Right"/>
-            </Viewbox>
+                <Viewbox HorizontalAlignment="Right">
+                    <TextBlock x:Name="Texto"/>
+                </Viewbox>
             
             </Border>
 
-        <Button Name="uno" Margin="10,0,10,10" Grid.Row="1" Grid.Column="0" Click="Button_Click" >
+        <Button Tag="1" Margin="10,0,10,10" Grid.Row="1" Grid.Column="0" Click="Button_Click" >
                 <Viewbox>
                     <Label FontSize="90">1</Label>
                 </Viewbox>
             </Button>
-        <Button x:Name="dos" Margin="10,0,10,10" Grid.Row="1" Grid.Column="1" Click="Button_Click" >
+        <Button Tag="2" Margin="10,0,10,10" Grid.Row="1" Grid.Column="1" Click="Button_Click" >
                 <Viewbox>
                 <Label FontSize="90">2</Label>
                 </Viewbox>
             </Button>
-        <Button x:Name="tres" Margin="10,0,10,10" Grid.Row="1" Grid.Column="2" Click="Button_Click">
+        <Button Tag="3" Margin="10,0,10,10" Grid.Row="1" Grid.Column="2" Click="Button_Click">
                 <Viewbox>
                 <Label FontSize="90">3</Label>
                 </Viewbox>
             </Button>
-        <Button x:Name="cuatro" Margin="10,0,10,10" Grid.Row="2" Grid.Column="0" Click="Button_Click">
+        <Button Tag="4" Margin="10,0,10,10" Grid.Row="2" Grid.Column="0" Click="Button_Click">
                 <Viewbox>
                 <Label FontSize="90">4</Label>
                 </Viewbox>
             </Button>
-        <Button x:Name="cinco" Margin="10,0,10,10" Grid.Row="2" Grid.Column="1" Click="Button_Click">
+        <Button Tag="5" Margin="10,0,10,10" Grid.Row="2" Grid.Column="1" Click="Button_Click">
                 <Viewbox>
                 <Label FontSize="90">5</Label>
                 </Viewbox>
             </Button>
-        <Button x:Name="seis" Margin="10,0,10,10" Grid.Row="2" Grid.Column="2" Click="Button_Click">
+        <Button Tag="6" Margin="10,0,10,10" Grid.Row="2" Grid.Column="2" Click="Button_Click">
                 <Viewbox>
                 <Label FontSize="90">6</Label>
                 </Viewbox>
             </Button>
-        <Button x:Name="siete" Margin="10,0,10,10" Grid.Row="3" Grid.Column="0" Click="Button_Click">
+        <Button Tag="7" Margin="10,0,10,10" Grid.Row="3" Grid.Column="0" Click="Button_Click">
                 <Viewbox>
                 <Label FontSize="90">7</Label>
                 </Viewbox>
             </Button>
-        <Button x:Name="ocho" Margin="10,0,10,10" Grid.Row="3" Grid.Column="1" Click="Button_Click">
+        <Button Tag="8" Margin="10,0,10,10" Grid.Row="3" Grid.Column="1" Click="Button_Click">
                 <Viewbox>
                 <Label FontSize="90">8</Label>
                 </Viewbox>
             </Button>
-        <Button x:Name="nueve" Margin="10,0,10,10" Grid.Row="3" Grid.Column="2" Click="Button_Click">
+        <Button Tag="9" Margin="10,0,10,10" Grid.Row="3" Grid.Column="2" Click="Button_Click">
                 <Viewbox>
                 <Label FontSize="90">9</Label>
                 </Viewbox>
             </Button>
 
-        <Button Click="Button_Click" x:Name="cero" Margin="10,0,10,10" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="3" FontSize="30">0</Button>
+        <Button Click="Button_Click" Tag="0" Margin="10,0,10,10" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="3" FontSize="30">0</Button>
         </Grid>
-
-
-
 
 </Window>
